@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- pembuka dari script html -->
+<html>
+<!-- pembuka kode head -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- judul kode html -->
+    <title>Belajar Form PHP</title>
+</head>
+<!-- penutup kode head -->
+<!-- kode badan untuk html -->
+<body>
+    <!-- digunakan untuk membuat heading pada html -->
+    <h2 style="text-align: center;"> Belajar Form HTML - PHP </h2>
+    <!-- 
+        1. atrribut action : berisi sebuah nilai yang dikirim ke file php
+        2. method adalah metode untuk mengirimkan data dari form tersebut
+            -> get merupakan metode pengiriman data melalui url
+            -> post merupakan metode pengiriman data tanpa melalui url
+     -->
+    <form action="proses.php" method="get" style="text-align: center;">
+    
+            <!--
+                     method GET akan menampilkan data/nilai pada URL, kemudian akan ditampung oleh action,
+                 Method POST data yang dikirim tidak terbatas.
+                 Sedangkan method GET tidak boleh lebih dari 2047 karakter.
+            -->
+        <!-- 
+            input type text menampilkan kotak isian 
+            attribut name berfungsi untuk penamaan kotak inputan
+         -->
+        Nama: <input type="text" name="nama1" />
+        <!-- berfungsi untuk menambak break atau enter -->
+        <br />
+        E-Mail: <input type="text" name="email" />
+        <br />
+        TL:<input type="date" name="TL"/>
+        <br/>
+        
+        <!-- input type submit berfungsi untuk mengirimkan data ketika di klik -->
+        <input type="checkbox" name="check1" value="Setuju">Setuju<br/>
+        <input type="submit" name="submit" value="submit">
+        
+        <!-- akhiran dari form -->
+    </form>
+    <!-- penutup dari tag body -->
+</body>
+<!-- penutup dari tag html -->
+</html>
